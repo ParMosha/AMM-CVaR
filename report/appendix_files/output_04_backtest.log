@@ -1,0 +1,80 @@
+======================================================================
+04 BACKTEST ON REAL TRADES
+======================================================================
+
+Real orders: 2500   window: 2026-08-16 .. 2026-09-14
+F: min $1,039  median $133,977  p95 $931,872  max $16,666,139
+Pools (M=5): uniswap-v3 USDC-WETH (0.05%), uniswap-v3 USDC-WETH (0.3%), uniswap-v2 USDC-WETH, uniswap-v3 USDC-WETH (0.01%), sushiswap USDC-WETH
+  backtest progress:   0%  (1/2500 orders)
+  backtest progress:  10%  (250/2500 orders)
+  backtest progress:  20%  (500/2500 orders)
+  backtest progress:  30%  (750/2500 orders)
+  backtest progress:  40%  (1000/2500 orders)
+  backtest progress:  50%  (1250/2500 orders)
+  backtest progress:  60%  (1500/2500 orders)
+  backtest progress:  70%  (1750/2500 orders)
+  backtest progress:  80%  (2000/2500 orders)
+  backtest progress:  90%  (2250/2500 orders)
+  backtest progress: 100%  (2500/2500 orders)
+
+======================================================================
+REALISED COSTS ON REAL TRADES
+======================================================================
+                     mean   median         std          max   VaR_0.95   CVaR_0.95  bps_mean  bps_CVaR_0.95
+strategy                                                                                                   
+CVaR              6908.85   414.44    99522.36   3469555.51   12178.14   117000.35     50.43         270.26
+CVaR+gasGuard     6902.12   414.44    99522.82   3469555.51   12178.14   117000.35     48.17         268.52
+EqualSplit      166131.66  6161.68  2481795.77  88266269.86  280810.07  2895020.18    922.56        6509.88
+LiqProp           6921.76   433.91    99410.84   3463138.28   12172.87   116847.57     57.38         290.98
+MeanOnly          6917.26   414.02    99609.72   3469956.95   12205.12   117139.64     50.39         270.70
+SinglePoolDeep    9987.30   422.07   147045.75   5245924.78   17037.35   172781.05     60.32         391.56
+SinglePoolMean    9987.30   422.07   147045.75   5245924.78   17037.35   172781.05     60.32         391.56
+
+======================================================================
+PAIRED COMPARISON: CVaR router vs baselines  (alpha=0.95)
+======================================================================
+                mean_diff_A_minus_B  median_diff  win_rate_A  tie_rate  mean_diff_worst_tail  CVaR_improvement_pct
+vs                                                                                                                
+CVaR+gasGuard                 6.731        0.000       0.000      0.53                29.537                 0.000
+EqualSplit              -159222.807    -5740.615       1.000      0.00               -47.420                95.959
+LiqProp                     -12.903      -20.521       0.905      0.00               174.063                -0.131
+MeanOnly                     -8.410       -0.001       0.514      0.00                28.220                 0.119
+SinglePoolDeep            -3078.450       -6.460       0.522      0.00                29.537                32.284
+SinglePoolMean            -3078.450       -6.460       0.522      0.00                29.537                32.284
+
+======================================================================
+STRESSED LIQUIDITY DAYS (top 20% by mean delta_real)
+======================================================================
+  6 days, severity threshold 0.174, 564 orders
+                     mean          max   CVaR_0.95
+strategy                                          
+CVaR              7981.95   2860003.00   141197.54
+CVaR+gasGuard     7974.98   2860003.00   141197.54
+EqualSplit      185490.84  68329161.71  3343345.80
+LiqProp           8001.87   2861072.07   141217.06
+MeanOnly          8001.59   2866723.57   141556.01
+SinglePoolDeep   10967.37   4005524.96   196612.14
+SinglePoolMean   10967.37   4005524.96   196612.14
+
+======================================================================
+BY ORDER SIZE
+======================================================================
+strategy         CVaR  CVaR+gasGuard  EqualSplit   LiqProp  MeanOnly  SinglePoolDeep  SinglePoolMean
+size_bucket                                                                                         
+$100k-500k     3360.3         3360.3     71024.1    3366.2    3367.4          4407.5          4407.5
+$25k-100k       259.1          238.3      3298.8     281.4     258.4           238.3           238.3
+$5k-25k          41.1           32.9       283.9      80.6      41.2            32.9            32.9
+<$5k             21.0           12.1        59.9      48.6      21.0            12.1            12.1
+>$500k       724084.4       724084.4  18072655.1  723208.3  724826.8       1075235.3       1075235.3
+
+======================================================================
+MODEL FIDELITY CHECK (real tape)
+======================================================================
+  bin-mean LSQ fit:  cost ~= 1.2795e-04 n + -1.0417e-09 n^2   R^2=0.9196
+  cost increasing in size: True   (rank corr 0.88)
+  cost per USD: 0.54 bps (smallest bin) -> 0.71 bps (largest bin)
+  NOTE: the quadratic-in-n term is an AMM (xy=k) property derived analytically;
+        the CEX tape confirms positive, size-increasing execution cost and sets
+        the linear fee/spread scale.  Curvature on a CEX book is venue-specific.
+
+Done. Backtest tables + figures written.

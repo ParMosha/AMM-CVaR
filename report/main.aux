@@ -1,0 +1,156 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction and problem statement}{3}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Real data and parameter selection}{3}{section.2}\protected@file@percent }
+\newlabel{sec:data}{{2}{3}{Real data and parameter selection}{section.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Data provenance. ``Real'' = downloaded observation; ``derived'' = computed from real data by a stated formula; ``estimated'' = a documented assumption.\relax }}{4}{table.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:provenance}{{1}{4}{Data provenance. ``Real'' = downloaded observation; ``derived'' = computed from real data by a stated formula; ``estimated'' = a documented assumption.\relax }{table.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}The real trade tape}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}The real pools}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The five real pools at the reference date 2026-08-31. $\phi _m$: fee; $L_m$: liquidity index; $g_m$: fixed gas per swap; $\bar  \delta _m$: mean scenario deviation.\relax }}{4}{table.caption.3}\protected@file@percent }
+\newlabel{tab:pools}{{2}{4}{The five real pools at the reference date 2026-08-31. $\phi _m$: fee; $L_m$: liquidity index; $g_m$: fixed gas per swap; $\bar \delta _m$: mean scenario deviation.\relax }{table.caption.3}{}}
+\citation{adams2021uniswap}
+\citation{angeris2022optimal}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Real data. Top left: daily TVL of the five real pools (DefiLlama). Top right: size distribution of the 2{,}500 real parent orders (log scale). Bottom left: empirical distribution of the scenario liquidity deviations $\delta _{m,k}$ derived from real TVL. Bottom right: mean real TVL by pool.\relax }}{5}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:data}{{1}{5}{Real data. Top left: daily TVL of the five real pools (DefiLlama). Top right: size distribution of the 2{,}500 real parent orders (log scale). Bottom left: empirical distribution of the scenario liquidity deviations $\delta _{m,k}$ derived from real TVL. Bottom right: mean real TVL by pool.\relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Convex cost model}{5}{section.3}\protected@file@percent }
+\newlabel{sec:model}{{3}{5}{Convex cost model}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Exact cost of a constant-product trade}{5}{subsection.3.1}\protected@file@percent }
+\newlabel{eq:exact-cost}{{1}{5}{Exact cost of a constant-product trade}{equation.3.1}{}}
+\newlabel{eq:L-def}{{2}{5}{Exact cost of a constant-product trade}{equation.3.2}{}}
+\newlabel{eq:taylor}{{3}{5}{Exact cost of a constant-product trade}{equation.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Fees and the full cost function}{6}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:cost-m}{{4}{6}{Fees and the full cost function}{equation.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Fidelity check on the real trade tape}{6}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:tape}{{3.3}{6}{Fidelity check on the real trade tape}{subsection.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Execution cost on the real trade tape. Left: size-bin means of one-second realised impact (with standard errors) and the least-squares fit $\hat  a n + \hat  b n^{2}$. Right: residuals and the convex part after removing the linear fit.\relax }}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:impact}{{2}{6}{Execution cost on the real trade tape. Left: size-bin means of one-second realised impact (with standard errors) and the least-squares fit $\hat a n + \hat b n^{2}$. Right: residuals and the convex part after removing the linear fit.\relax }{figure.caption.5}{}}
+\citation{rockafellar2000optimization}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Scenario model: uncertain execution quality}{7}{section.4}\protected@file@percent }
+\newlabel{sec:scenarios}{{4}{7}{Scenario model: uncertain execution quality}{section.4}{}}
+\newlabel{eq:scenario}{{5}{7}{Scenario model: uncertain execution quality}{equation.4.5}{}}
+\newlabel{eq:delta}{{6}{7}{Scenario model: uncertain execution quality}{equation.4.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Optimization problem}{7}{section.5}\protected@file@percent }
+\newlabel{sec:problem}{{5}{7}{Optimization problem}{section.5}{}}
+\newlabel{eq:Ck}{{7}{7}{Optimization problem}{equation.5.7}{}}
+\newlabel{eq:cvar}{{8}{7}{Optimization problem}{equation.5.8}{}}
+\newlabel{eq:problem}{{9}{7}{Optimization problem}{equation.5.9}{}}
+\citation{boyd2004convex}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Convexity and DCP analysis}{8}{section.6}\protected@file@percent }
+\newlabel{sec:convexity}{{6}{8}{Convexity and DCP analysis}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}The $z_m$ relaxation is fractional --- and collapses}{8}{subsection.6.1}\protected@file@percent }
+\newlabel{sec:relaxation}{{6.1}{8}{The $z_m$ relaxation is fractional --- and collapses}{subsection.6.1}{}}
+\newlabel{lem:collapse}{{1}{8}{Collapse of the usage variables}{lemma.1}{}}
+\newlabel{eq:true-cost}{{10}{9}{Consequences}{equation.6.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Numerical solution in CVXPY}{9}{section.7}\protected@file@percent }
+\newlabel{sec:numerics}{{7}{9}{Numerical solution in CVXPY}{section.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Scalability.}{9}{section*.7}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Solver scalability: warm re-solve time vs.\ cold compile+solve time (ms).\relax }}{9}{table.caption.8}\protected@file@percent }
+\newlabel{tab:scaling}{{3}{9}{Solver scalability: warm re-solve time vs.\ cold compile+solve time (ms).\relax }{table.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Solver scalability. Left: warm re-solve (solid) vs.\ cold compile+solve (dashed) against the number of scenarios $K$, per pool count $M$. Right: warm solve time versus problem size.\relax }}{10}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:scaling}{{3}{10}{Solver scalability. Left: warm re-solve (solid) vs.\ cold compile+solve (dashed) against the number of scenarios $K$, per pool count $M$. Right: warm solve time versus problem size.\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Base-case solution}{10}{section.8}\protected@file@percent }
+\newlabel{sec:basecase}{{8}{10}{Base-case solution}{section.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Optimal allocation of a \$250{,}000 order (\ensuremath  {\mathrm  {CVaR}}{} router).\relax }}{10}{table.caption.10}\protected@file@percent }
+\newlabel{tab:basecase}{{4}{10}{Optimal allocation of a \$250{,}000 order (\cvar {} router).\relax }{table.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Base-case allocation of \$250{,}000 across the five real pools (left), the resulting scenario-cost distributions of the competing strategies (middle), and the allocation shares (right).\relax }}{10}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:basecase}{{4}{10}{Base-case allocation of \$250{,}000 across the five real pools (left), the resulting scenario-cost distributions of the competing strategies (middle), and the allocation shares (right).\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Baseline comparison}{11}{section.9}\protected@file@percent }
+\newlabel{sec:baselines}{{9}{11}{Baseline comparison}{section.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces In-sample scenario costs by strategy (USD, true cost).\relax }}{11}{table.caption.12}\protected@file@percent }
+\newlabel{tab:baselines}{{5}{11}{In-sample scenario costs by strategy (USD, true cost).\relax }{table.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Baseline comparison on the scenario set. Left: mean, $\ensuremath  {\mathrm  {CVaR}}_{0.95}$ and worst-case cost per strategy. Right: empirical cost distributions.\relax }}{11}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:baselines}{{5}{11}{Baseline comparison on the scenario set. Left: mean, $\cvar _{0.95}$ and worst-case cost per strategy. Right: empirical cost distributions.\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Sensitivity analysis}{11}{section.10}\protected@file@percent }
+\newlabel{sec:sensitivity}{{10}{11}{Sensitivity analysis}{section.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.1}Confidence level $\alpha $ (risk aversion)}{11}{subsection.10.1}\protected@file@percent }
+\newlabel{sec:sensitivity-alpha}{{10.1}{11}{Confidence level $\alpha $ (risk aversion)}{subsection.10.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Sweep over $\alpha $ at $F=\$250$k, $\lambda =1$. $\ensuremath  {\mathrm  {CVaR}}$(eval) is always measured at the fixed level 0.95 for comparability; $\ensuremath  {\mathrm  {CVaR}}$(own $\alpha $) is measured at the solver's own level.\relax }}{11}{table.caption.14}\protected@file@percent }
+\newlabel{tab:sens-alpha}{{6}{11}{Sweep over $\alpha $ at $F=\$250$k, $\lambda =1$. $\cvar $(eval) is always measured at the fixed level 0.95 for comparability; $\cvar $(own $\alpha $) is measured at the solver's own level.\relax }{table.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Sensitivity to $\alpha $. Left: mean cost (flat) and \ensuremath  {\mathrm  {CVaR}}{} at the solver's own level (rising with $\alpha $, since a deeper tail is averaged). Right: allocation shares shift only mildly toward the low-deviation 0.05\% tier as risk aversion grows.\relax }}{12}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:sens-alpha}{{6}{12}{Sensitivity to $\alpha $. Left: mean cost (flat) and \cvar {} at the solver's own level (rising with $\alpha $, since a deeper tail is averaged). Right: allocation shares shift only mildly toward the low-deviation 0.05\% tier as risk aversion grows.\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2}Order size $F$: when does splitting become necessary?}{12}{subsection.10.2}\protected@file@percent }
+\newlabel{sec:sensitivity-F}{{10.2}{12}{Order size $F$: when does splitting become necessary?}{subsection.10.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Sweep over the order size $F$ (true cost). \ensuremath  {\mathrm  {CVaR}}{} router vs.\ the best single pool; ``active pools'' counts pools with more than 1\% of $F$.\relax }}{12}{table.caption.16}\protected@file@percent }
+\newlabel{tab:sens-F}{{7}{12}{Sweep over the order size $F$ (true cost). \cvar {} router vs.\ the best single pool; ``active pools'' counts pools with more than 1\% of $F$.\relax }{table.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Sensitivity to the order size. Left: cost per dollar (U-shaped: gas-dominated small orders, impact-dominated large orders). Middle: number of active pools --- splitting starts paying around $F\approx \$100$--$200$k under true gas. Right: allocation shares.\relax }}{12}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:sens-F}{{7}{12}{Sensitivity to the order size. Left: cost per dollar (U-shaped: gas-dominated small orders, impact-dominated large orders). Middle: number of active pools --- splitting starts paying around $F\approx \$100$--$200$k under true gas. Right: allocation shares.\relax }{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3}Uncertainty intensity $\delta $: how much does \ensuremath  {\mathrm  {CVaR}}{} protect the plan?}{13}{subsection.10.3}\protected@file@percent }
+\newlabel{sec:sensitivity-delta}{{10.3}{13}{Uncertainty intensity $\delta $: how much does \cvar {} protect the plan?}{subsection.10.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Sweep over the uncertainty intensity. Scenario-set costs of the \ensuremath  {\mathrm  {CVaR}}{} plan ($\lambda =1$) and of the mean-only plan ($\lambda =0$), both evaluated at $\ensuremath  {\mathrm  {CVaR}}_{0.95}$.\relax }}{13}{table.caption.18}\protected@file@percent }
+\newlabel{tab:sens-delta}{{8}{13}{Sweep over the uncertainty intensity. Scenario-set costs of the \cvar {} plan ($\lambda =1$) and of the mean-only plan ($\lambda =0$), both evaluated at $\cvar _{0.95}$.\relax }{table.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Sensitivity to the uncertainty intensity. As stress grows, the \ensuremath  {\mathrm  {CVaR}}{} plan gives up a little mean cost (1.4\% at scale 2.0) and its tail cost improves relative to the mean-only plan (3.5\% at scale 2.0) --- the insurance premium of \ensuremath  {\mathrm  {CVaR}}{} is small in calm conditions and pays exactly when liquidity uncertainty is high.\relax }}{13}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:sens-delta}{{8}{13}{Sensitivity to the uncertainty intensity. As stress grows, the \cvar {} plan gives up a little mean cost (1.4\% at scale 2.0) and its tail cost improves relative to the mean-only plan (3.5\% at scale 2.0) --- the insurance premium of \cvar {} is small in calm conditions and pays exactly when liquidity uncertainty is high.\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.4}Extra: efficient frontier in $\lambda $}{13}{subsection.10.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Efficient frontier (mean vs.\ \ensuremath  {\mathrm  {CVaR}}) and the evolution of the allocation with the risk weight $\lambda $.\relax }}{14}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:frontier}{{9}{14}{Efficient frontier (mean vs.\ \cvar ) and the evolution of the allocation with the risk weight $\lambda $.\relax }{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11}Walk-forward backtest on real trades}{14}{section.11}\protected@file@percent }
+\newlabel{sec:backtest}{{11}{14}{Walk-forward backtest on real trades}{section.11}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Walk-forward backtest (per real parent order).\relax }}{14}{algorithm.1}\protected@file@percent }
+\newlabel{alg:backtest}{{1}{14}{Walk-forward backtest (per real parent order).\relax }{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.1}Realised costs over 2{,}500 real orders}{14}{subsection.11.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Realized execution costs on the real trade tape (2{,}500 orders, USD and bps of $F$).\relax }}{14}{table.caption.21}\protected@file@percent }
+\newlabel{tab:backtest}{{9}{14}{Realized execution costs on the real trade tape (2{,}500 orders, USD and bps of $F$).\relax }{table.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Realized execution cost on 2{,}500 real trades. Top left: empirical CDFs (log scale). Top right: cost in bps of $F$. Bottom left: cumulative cost over the tape. Bottom right: per-order savings of the \ensuremath  {\mathrm  {CVaR}}{} router against the best single pool (mean saving \$3{,}078).\relax }}{15}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:backtest}{{10}{15}{Realized execution cost on 2{,}500 real trades. Top left: empirical CDFs (log scale). Top right: cost in bps of $F$. Bottom left: cumulative cost over the tape. Bottom right: per-order savings of the \cvar {} router against the best single pool (mean saving \$3{,}078).\relax }{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Tail behaviour on the real tape. Left: worst 5\% of realized costs (log scale). Right: realized $\ensuremath  {\mathrm  {CVaR}}_{0.95}$ per strategy.\relax }}{15}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:backtest-tail}{{11}{15}{Tail behaviour on the real tape. Left: worst 5\% of realized costs (log scale). Right: realized $\cvar _{0.95}$ per strategy.\relax }{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.2}Paired comparison and order-size breakdown}{15}{subsection.11.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Paired per-order comparison, \ensuremath  {\mathrm  {CVaR}}{} router ($A$) vs.\ baseline ($B$), on real trades.\relax }}{16}{table.caption.24}\protected@file@percent }
+\newlabel{tab:paired}{{10}{16}{Paired per-order comparison, \cvar {} router ($A$) vs.\ baseline ($B$), on real trades.\relax }{table.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Realized $\ensuremath  {\mathrm  {CVaR}}_{0.95}$ (USD) by real order size. The \ensuremath  {\mathrm  {CVaR}}{} router wins for $F\gtrsim \$100$k; the gas-guard correctly falls back to a single pool below that.\relax }}{16}{table.caption.25}\protected@file@percent }
+\newlabel{tab:by-size}{{11}{16}{Realized $\cvar _{0.95}$ (USD) by real order size. The \cvar {} router wins for $F\gtrsim \$100$k; the gas-guard correctly falls back to a single pool below that.\relax }{table.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Realized mean (left) and $\ensuremath  {\mathrm  {CVaR}}_{0.95}$ (right) by real order size. The crossover in Table\nobreakspace  {}\ref  {tab:by-size} is the out-of-sample counterpart of the F-sweep in Figure\nobreakspace  {}\ref  {fig:sens-F}.\relax }}{16}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:by-size}{{12}{16}{Realized mean (left) and $\cvar _{0.95}$ (right) by real order size. The crossover in Table~\ref {tab:by-size} is the out-of-sample counterpart of the F-sweep in Figure~\ref {fig:sens-F}.\relax }{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.3}Stressed liquidity days}{16}{subsection.11.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Realized costs on the worst real liquidity days (564 orders, USD).\relax }}{16}{table.caption.27}\protected@file@percent }
+\newlabel{tab:bad-days}{{12}{16}{Realized costs on the worst real liquidity days (564 orders, USD).\relax }{table.caption.27}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Discussion and findings}{17}{section.12}\protected@file@percent }
+\newlabel{sec:discussion}{{12}{17}{Discussion and findings}{section.12}{}}
+\@writefile{toc}{\contentsline {paragraph}{Practical recommendations.}{17}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {13}Review of the earlier project notebooks and corrections}{17}{section.13}\protected@file@percent }
+\newlabel{sec:review}{{13}{17}{Review of the earlier project notebooks and corrections}{section.13}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Issues found in the earlier notebooks and their corrections.\relax }}{18}{table.caption.29}\protected@file@percent }
+\newlabel{tab:review}{{13}{18}{Issues found in the earlier notebooks and their corrections.\relax }{table.caption.29}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14}Limitations}{18}{section.14}\protected@file@percent }
+\newlabel{sec:limitations}{{14}{18}{Limitations}{section.14}{}}
+\bibcite{adams2021uniswap}{1}
+\bibcite{angeris2022optimal}{2}
+\bibcite{boyd2004convex}{3}
+\bibcite{daian2020flash}{4}
+\bibcite{rockafellar2000optimization}{5}
+\bibcite{data-sources}{6}
+\@writefile{toc}{\contentsline {section}{\numberline {15}Conclusions}{19}{section.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Complete result tables}{19}{appendix.A}\protected@file@percent }
+\newlabel{app:tables}{{A}{19}{Complete result tables}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Raw console output: in-sample experiments}{26}{appendix.B}\protected@file@percent }
+\newlabel{app:log03}{{B}{26}{Raw console output: in-sample experiments}{appendix.B}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}Full console output of \texttt  {scripts/03\_solve\_and\_analyze.py} (base case, baselines, sensitivity sweeps, frontier, scalability).}{26}{lstlisting.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C}Raw console output: real-trade backtest}{27}{appendix.C}\protected@file@percent }
+\newlabel{app:log04}{{C}{27}{Raw console output: real-trade backtest}{appendix.C}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}Full console output of \texttt  {scripts/04\_backtest\_real\_trades.py}.}{27}{lstlisting.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D}Test suite}{29}{appendix.D}\protected@file@percent }
+\newlabel{app:tests}{{D}{29}{Test suite}{appendix.D}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3}\texttt  {pytest -v}: 32 tests covering numerical convexity, RU-\ensuremath  {\mathrm  {CVaR}}{} correctness against an explicit epigraph solve, DCP compliance and feasibility of the formulation, scenario no-look-ahead and trend-inversion regression, and an end-to-end backtest smoke test.}{29}{lstlisting.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {E}Key code excerpts}{29}{appendix.E}\protected@file@percent }
+\newlabel{app:code}{{E}{29}{Key code excerpts}{appendix.E}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F}Reproducibility and data manifest}{30}{appendix.F}\protected@file@percent }
+\newlabel{app:repro}{{F}{30}{Reproducibility and data manifest}{appendix.F}{}}
+\gdef \@abspage@last{31}

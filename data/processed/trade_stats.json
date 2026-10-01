@@ -1,0 +1,9 @@
+{
+  "n_trades": 25544800,
+  "sell_notional_usd": 11982345569.330227,
+  "buy_notional_usd": 12167878134.109386,
+  "median_trade_usd": 31.761408000000003,
+  "p95_trade_usd": 4310.533672199989,
+  "p999_trade_usd": 57937.892340521576,
+  "mean_trade_usd": 945.4066464971193
+}

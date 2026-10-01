@@ -1,0 +1,32 @@
+======================================================================
+01 DOWNLOAD REAL DATA
+======================================================================
+
+[1/4] Binance aggTrades ETHUSDT  2026-08-16 .. 2026-09-14
+      30 daily files, 382.7 MB cached in data/raw/aggtrades/
+      window: 2026-08-16 .. 2026-09-14
+
+[2/4] Binance 1h klines ETHUSDT  2024-04-06 .. 2026-09-14
+      29 monthly archives, 1.19 MB
+
+[3/4] DefiLlama pool universe snapshot
+      /Users/parham.moshashaei/Desktop/EE/Term5/Convex/Project/amm_cvar/data/raw/defillama_pools.json  (11.88 MB)
+      candidate USDC-WETH pools: 5
+        - uniswap-v3   USDC-WETH      meta=0.05%  tvl=$100,407,599
+        - uniswap-v3   USDC-WETH      meta=0.3%   tvl=$37,632,019
+        - uniswap-v2   USDC-WETH      meta=None   tvl=$21,146,527
+        - uniswap-v3   USDC-WETH      meta=0.01%  tvl=$6,546,328
+        - uniswap-v3   USDC-WETH      meta=1%     tvl=$877,285
+      cached 5 TVL histories in data/raw/defillama_charts/
+
+[4/4] eth_gasPrice via public RPC
+Traceback (most recent call last):
+  File "/Users/parham.moshashaei/Desktop/EE/Term5/Convex/Project/amm_cvar/scripts/01_download_data.py", line 100, in <module>
+    main()
+  File "/Users/parham.moshashaei/Desktop/EE/Term5/Convex/Project/amm_cvar/scripts/01_download_data.py", line 88, in main
+    gwei = ds.try_eth_gas_price()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/parham.moshashaei/Desktop/EE/Term5/Convex/Project/amm_cvar/src/amm_cvar/data_sources.py", line 207, in try_eth_gas_price
+    for endpoint in C.ETH_RPC_ENDPOINTS:
+                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'amm_cvar.config' has no attribute 'ETH_RPC_ENDPOINTS'

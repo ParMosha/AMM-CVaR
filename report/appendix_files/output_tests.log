@@ -1,0 +1,41 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.13, pytest-8.4.1, pluggy-1.5.0 -- /opt/anaconda3/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/parham.moshashaei/Desktop/EE/Term5/Convex/Project/amm_cvar
+plugins: mock-3.15.1, cov-7.1.0, anyio-4.14.1
+collecting ... collected 32 items
+
+tests/test_backtest.py::test_backtest_smoke PASSED                       [  3%]
+tests/test_backtest.py::test_backtest_summary_and_sizes PASSED           [  6%]
+tests/test_backtest.py::test_cvar_router_not_worse_on_tail_than_equal_split PASSED [  9%]
+tests/test_cost_model.py::test_xyk_impact_convex_and_matches_taylor PASSED [ 12%]
+tests/test_cost_model.py::test_quadratic_impact_scales_quadratically PASSED [ 15%]
+tests/test_cost_model.py::test_scenario_cost_shape_and_finiteness PASSED [ 18%]
+tests/test_cost_model.py::test_scenario_cost_convexity_midpoint PASSED   [ 21%]
+tests/test_cost_model.py::test_true_execution_cost_charges_fixed_gas_once_per_pool PASSED [ 25%]
+tests/test_cost_model.py::test_fit_impact_regression_recovers_quadratic PASSED [ 28%]
+tests/test_metrics.py::test_cvar_matches_ru_epigraph PASSED              [ 31%]
+tests/test_metrics.py::test_cvar_known_sample PASSED                     [ 34%]
+tests/test_metrics.py::test_cvar_fractional_boundary PASSED              [ 37%]
+tests/test_metrics.py::test_cvar_monotone_in_alpha PASSED                [ 40%]
+tests/test_metrics.py::test_cvar_bounded_by_max_and_ge_var PASSED        [ 43%]
+tests/test_metrics.py::test_summarize_and_paired PASSED                  [ 46%]
+tests/test_optimizer.py::test_formulation_is_dcp PASSED                  [ 50%]
+tests/test_optimizer.py::test_solution_respects_constraints PASSED       [ 53%]
+tests/test_optimizer.py::test_usage_collapses_to_allocation_share PASSED [ 56%]
+tests/test_optimizer.py::test_reproducible PASSED                        [ 59%]
+tests/test_optimizer.py::test_mean_only_dominates_single_pool_on_mean PASSED [ 62%]
+tests/test_optimizer.py::test_cvar_solution_has_lower_cvar_than_mean_only PASSED [ 65%]
+tests/test_optimizer.py::test_lambda_zero_matches_mean_only PASSED       [ 68%]
+tests/test_optimizer.py::test_dimensions_count PASSED                    [ 71%]
+tests/test_optimizer.py::test_invalid_inputs_raise PASSED                [ 75%]
+tests/test_optimizer.py::test_higher_alpha_focuses_allocation_on_safer_pools PASSED [ 78%]
+tests/test_scenarios.py::test_shapes_and_bounds PASSED                   [ 81%]
+tests/test_scenarios.py::test_scenarios_exclude_execution_day PASSED     [ 84%]
+tests/test_scenarios.py::test_delta_scale_monotone PASSED                [ 87%]
+tests/test_scenarios.py::test_realized_state_out_of_sample PASSED        [ 90%]
+tests/test_scenarios.py::test_adverse_only_clipping PASSED               [ 93%]
+tests/test_scenarios.py::test_trend_does_not_invert_risk PASSED          [ 96%]
+tests/test_scenarios.py::test_insufficient_history_raises PASSED         [100%]
+
+============================= 32 passed in 18.98s ==============================

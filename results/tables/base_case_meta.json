@@ -1,0 +1,16 @@
+{
+  "M": 5,
+  "K": 120,
+  "F": 250000.0,
+  "alpha": 0.95,
+  "lam": 1.0,
+  "eta": 0.0,
+  "ref_date": "2026-08-31",
+  "solver": "CLARABEL",
+  "solve_time_ms": 14.604000003600959,
+  "optimal_value": 2436.7623860346193,
+  "mean_cost": 1194.390968714426,
+  "cvar_value": 1308.8632455013678,
+  "n_variables": 131,
+  "n_constraints": 251
+}

@@ -1,0 +1,36 @@
+\contentsline {section}{\numberline {1}Introduction and problem statement}{3}{section.1}%
+\contentsline {section}{\numberline {2}Real data and parameter selection}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The real trade tape}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}The real pools}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Convex cost model}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Exact cost of a constant-product trade}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Fees and the full cost function}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Fidelity check on the real trade tape}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Scenario model: uncertain execution quality}{7}{section.4}%
+\contentsline {section}{\numberline {5}Optimization problem}{7}{section.5}%
+\contentsline {section}{\numberline {6}Convexity and DCP analysis}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.1}The $z_m$ relaxation is fractional --- and collapses}{8}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Numerical solution in CVXPY}{9}{section.7}%
+\contentsline {paragraph}{Scalability.}{9}{section*.7}%
+\contentsline {section}{\numberline {8}Base-case solution}{10}{section.8}%
+\contentsline {section}{\numberline {9}Baseline comparison}{11}{section.9}%
+\contentsline {section}{\numberline {10}Sensitivity analysis}{11}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Confidence level $\alpha $ (risk aversion)}{11}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Order size $F$: when does splitting become necessary?}{12}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Uncertainty intensity $\delta $: how much does \ensuremath {\mathrm {CVaR}}{} protect the plan?}{13}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Extra: efficient frontier in $\lambda $}{13}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Walk-forward backtest on real trades}{14}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Realised costs over 2{,}500 real orders}{14}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Paired comparison and order-size breakdown}{15}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Stressed liquidity days}{16}{subsection.11.3}%
+\contentsline {section}{\numberline {12}Discussion and findings}{17}{section.12}%
+\contentsline {paragraph}{Practical recommendations.}{17}{section*.28}%
+\contentsline {section}{\numberline {13}Review of the earlier project notebooks and corrections}{17}{section.13}%
+\contentsline {section}{\numberline {14}Limitations}{18}{section.14}%
+\contentsline {section}{\numberline {15}Conclusions}{19}{section.15}%
+\contentsline {section}{\numberline {A}Complete result tables}{19}{appendix.A}%
+\contentsline {section}{\numberline {B}Raw console output: in-sample experiments}{26}{appendix.B}%
+\contentsline {section}{\numberline {C}Raw console output: real-trade backtest}{27}{appendix.C}%
+\contentsline {section}{\numberline {D}Test suite}{29}{appendix.D}%
+\contentsline {section}{\numberline {E}Key code excerpts}{29}{appendix.E}%
+\contentsline {section}{\numberline {F}Reproducibility and data manifest}{30}{appendix.F}%
